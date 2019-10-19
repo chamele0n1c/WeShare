@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://cyberbazaar.tk/</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+    <image:image>
+      <image:loc>https://cyberbazaar.tk/img/logo.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://cyberbazaar.tk/en-us/research/wp-content/uploads/2017/05/icon-people-circle-1-360x360.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://cyberbazaar.tk/img/CyberBazaar.png</image:loc>
+      <image:title>cyberbazaar</image:title>
+      <image:caption>cyberbazaar</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://cyberbazaar.tk/</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+    <image:image>
+      <image:loc>https://cyberbazaar.tk/img/logo.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://cyberbazaar.tk/en-us/research/wp-content/uploads/2017/05/icon-people-circle-1-360x360.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://cyberbazaar.tk/img/CyberBazaar.png</image:loc>
+      <image:title>cyberbazaar</image:title>
+      <image:caption>cyberbazaar</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://cyberbazaar.tk/member/login</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+    <image:image>
+      <image:loc>https://cyberbazaar.tk/img/logo.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://cyberbazaar.tk/member/signup</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+    <image:image>
+      <image:loc>https://cyberbazaar.tk/img/logo.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://cyberbazaar.tk/member/dashboard</loc>
+    <changefreq>none</changefreq>
+    <priority>None</priority>
+    <image:image>
+      <image:loc>https://cyberbazaar.tk/img/logo.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://cyberbazaar.tk/en-us/research/wp-content/uploads/2017/05/icon-people-circle-1-360x360.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://cyberbazaar.tk/img/CyberBazaar.png</image:loc>
+      <image:title>cyberbazaar</image:title>
+      <image:caption>cyberbazaar</image:caption>
+    </image:image>
+  </url>
+</urlset>
+<!--<guid value="" />-->
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->

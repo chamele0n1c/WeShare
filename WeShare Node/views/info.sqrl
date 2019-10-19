@@ -1,0 +1,9 @@
+<html>
+<head>
+<title> APPLICATION RESPONSE </title>
+</head>
+<body>
+<h3 text-align="center"> Response Info : </h3> <br />
+<h5> {{ info }} </h5>
+</body>
+</html>

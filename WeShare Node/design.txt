@@ -1,0 +1,74 @@
+ROUTES:
+
+/ GET
+/index GET
+/login GET POST
+/signup GET POST
+/promote GET POST
+/imgUp GET POST
+/viewListing GET
+/newListing GET POST
+/browseListings GET
+/deleteListing GET POST
+/viewUser GET
+/reportUser GET POST
+/deleteAcc GET POST
+
+
+
+/signup 
+- Check Username is Only 8-16 Chars Upper Lower Numeral
+- Check Password is 11+ Chars Upper Lower Numeral
+- NEW USER NEEDS TO VERIFY EMAIL USING VERIFICATION LINK SENT TO SPECIFIED INBOX
+- HTML Use JS For Live Regex Matching when typing False makes Red TextBox
+- True Makes Green Textbox
+
+
+USE CLOUDINARY CDN SERVICES
+
+/*
+POST /IMGUP function()
+{
+
+
+
+if (req.params.type="accimage")
+{
+  require User Auth Token;
+  if AuthToken Pass -->
+	imgs= req.post.content.Images;
+	response = cloudinary.upload(req.params.images)
+	setUserImg(usr, response)
+	
+
+} if (req.params.type = "listingUpload") {
+  require User Auth Token;
+
+}
+*/
+
+
+SECURITY IMPLEMENTATIONS:
+- USE AN API (ROUTE CALL) LIMITER
+- 1 NEW LISTING EVERY 15 MINUTES PER USER
+- reCAPTCHA from google
+- cloudflare protection
+
+
+!!! DISABLE ERROR FAILURE REPORTING TO END USER
+!!! DONT REVEAL ANY POSSIBLE DAMNING INFO ON THE SERVER
+I.E. IP, Software, Ports, Proxy, Software Versions, Error Information
+
+DB
+|-USER PASS HASHING NON-LINEAR
+
+DEVLOPMENT LANGUAGE:
+NODE.JS
+
+-Cloudinary NJS
+-HTTPS
+-morgan
+-Squirelly
+-Express
+-express-api-limiter
+-Lowdb JSON small local DB
