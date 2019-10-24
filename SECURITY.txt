@@ -1,0 +1,5 @@
+#Security Concerns
+WeShare Node/
+  -/controllers
+    -/Signup.js
+      -NEED SMS VERIFY TO TRULY EVADE BOTS even with ReCaptcha and CloudFlare AND Email
