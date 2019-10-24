@@ -1,9 +1,12 @@
+//Import Needed Modules
+
 const Sqrl = require('squirrelly');
 const Request = require("request");
 const pubKey = , privKey = ;
 const nodemailer = require('nodemailer');
 const db = require('../db');
 
+//Primitive ID Function
 function makeid(length)
 {
     let result             = '';
@@ -16,6 +19,7 @@ function makeid(length)
     return result;
 }
 
+//Get Verify Email Link string with domain premeditated
 function getVerificationLink(usrObj)
 {
     return "https://cyberbazaar.tk/member/verify/" + usrObj.data.eVext;
@@ -27,6 +31,8 @@ const transporter = nodemailer.createTransport({
            pass:""
        }
    });
+
+//Node Emailer send verify email
 function sendVerifyEmail(usrObj)
 {
     const htmlVar = Sqrl.renderFile('./views/member/eVtemplate.html', {link : getVerificationLink(usrObj)});
@@ -55,6 +61,7 @@ function sendVerifyEmail(usrObj)
 
 }
 
+//Get SignUp Page
 module.exports.getSignUp = function (req, res, next)
 {
     res.send(Sqrl.renderFile('./views/member/signup.html', {
@@ -62,6 +69,8 @@ module.exports.getSignUp = function (req, res, next)
     }));
 };
 
+
+//POST SignUP register to DB
 module.exports.postSignup = function (req, res)
 {
     if (!req.body["g-recaptcha-response"] || req.body["g-recaptcha-response"] == undefined)
@@ -192,7 +201,7 @@ module.exports.postSignup = function (req, res)
 
 
 
-
+//Get Verify page for email verify new usr
 module.exports.getVerify = function (req, res)
 {
     res.send(Sqrl.renderFile('./views/member/eV.html', {
@@ -268,7 +277,7 @@ module.exports.postVerify = function (req, res)
     }
 }
 
-
+//REGEX EMAIL VALIDATION FORMAT
 function validateEmail(mail)
 {
     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail))
