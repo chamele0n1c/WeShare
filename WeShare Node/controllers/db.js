@@ -1,4 +1,7 @@
+//imports
+//Brcypt Salt Hash Security
 const r = require('rethinkdb');
+//RethinkDB Remote DB
 const bcrypt = require('bcryptjs');
 
 let connection = null;
@@ -7,6 +10,8 @@ r.connect( {host: 'localhost', port: 28015}, function(err, conn) {
     connection = conn;
 });
 
+
+//Gen Unique Listing ID
 module.exports.makelid = async function(length) 
 {
     console.log('make lid ()');
@@ -74,6 +79,8 @@ module.exports.makelid = async function(length)
     });
     
 }
+
+//Check User Existent / Non-Existent
 module.exports.userExists = async function checkUserExists ( Usr ) 
 {
     return new Promise ((resolve, reject) => {
@@ -102,6 +109,7 @@ module.exports.userExists = async function checkUserExists ( Usr )
     });
 }
 
+//Verify salt Bcrypt hash user login
 module.exports.passCheck = async function (Usr, Pass) 
 {
     return new Promise ((resolve, reject) => {
@@ -142,6 +150,7 @@ module.exports.passCheck = async function (Usr, Pass)
     });
 }
 
+//Stats Total DB User members
 module.exports.totalUsers = async function ( ) 
 {
     return new Promise ((resolve, reject) =>
@@ -153,7 +162,7 @@ module.exports.totalUsers = async function ( )
     });
 }
 
-
+//Emailexistent true/false bool
 module.exports.emailExists = async function( email ) 
 {
     return new Promise ((resolve, reject) => 
@@ -187,6 +196,7 @@ module.exports.emailExists = async function( email )
     });
 }
 
+//new member db call
 module.exports.addUser = async function( usr )
 {
     return new Promise ((resolve, reject) => 
@@ -212,6 +222,7 @@ module.exports.addUser = async function( usr )
     });
 }
 
+//verify members email db call 2fa?
 module.exports.verifyUser = async function (pid)
 {
         return new Promise ((resolve, reject) => {
@@ -278,6 +289,7 @@ module.exports.verifyUser = async function (pid)
         });
 }
 
+//Verified user yes / no
 module.exports.userVerified = async function  ( usr ) 
 {
 
@@ -317,6 +329,7 @@ module.exports.userVerified = async function  ( usr )
         });
 }
 
+//Bcrypt Async Hash
 module.exports.hash = async function (pass)
 {
         return new Promise ((resolve, reject) =>
@@ -338,6 +351,7 @@ module.exports.hash = async function (pass)
         });
 }
 
+//DB Log last login
 module.exports.userLogedIn = async function (usr)
 {
     const today = new Date();
@@ -361,6 +375,7 @@ module.exports.userLogedIn = async function (usr)
     
 }
 
+//Get API Key from user ?Sensitive DB call
 module.exports.getKey = async function (usr)
 {
     return new Promise ((resolve, reject) =>
@@ -388,6 +403,8 @@ module.exports.getKey = async function (usr)
             });
     });
 }
+
+// Check the user Key
 module.exports.checkKey = async function (key)
 {
     return new Promise ((resolve, reject) =>
