@@ -1,14 +1,17 @@
+//modules imports
+
 const Sqrl = require('squirrelly');
 const pubKey = , privKey = ;
 const Request = require("request");
 const db = require('../db');
-//Get Login Page
+
+//GET Login Page 
 module.exports.getLogin = function(req, res, next)
 {
   res.send(Sqrl.renderFile('./views/member/login.html', {title: "Login", sitekey: pubKey}));
 };
 
-//Login Function
+//POST Login Page AUTH USER WITH COOKIES
 module.exports.postLogin = function (req, res, next)
 {
   /* CAPTCHA CODE */
