@@ -4,7 +4,7 @@ New Project in Design : // (WeShare / (SCRAPED NAME) )
 
 # Concept: A New Better Version of Craigslist made Grounds up 
 
-# (WeShare?) SaaS (Craigslist but better)
+# (WeShare?) PaaS (Craigslist but better)
 
 Node Front End Delivery and Backend Workings
 
@@ -52,6 +52,7 @@ We gots the CloudFlare
 
 Failsafe Procedure:
 MasterKey - Runtime Execution Protection Protection using Masterkey Salt in run time to crypt all data for Security and Master Encryption of all Possibly Confidential and HIPAA compliant User Data
+I could also definitely figure implementation of FIDO Authentication Modules for Hardware Key based platform authentication
 
 
 
