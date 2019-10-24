@@ -1,7 +1,10 @@
+//Modules Import
 const Sqrl = require('squirrelly');
 const pubKey = , privKey = ;
 const db = require('../db');
 const Request = require("request");
+
+//primitive ID Gen func
 function makeid(length) 
 {
     let result             = '';
@@ -13,6 +16,11 @@ function makeid(length)
     }
     return result;
 }
+/*
+
+THESE CATEGORIES AND SECTIONS NEED TO BE CACHED SITE WIDE
+
+*/
 
 const categories = [
   "Antiques",
@@ -68,11 +76,13 @@ const sections =
   "Free"
 ];
 
+//Get New Listing Page
 module.exports.getNewListing = function(req, res, next)
 {
   res.send(Sqrl.renderFile('./views/listings/newListing.html', {title : "New Listing", sitekey: pubKey, sections : sections, categories : categories }));
 };
 
+//Post New Listing Page
 module.exports.postNewListing = function(req, res, next)
 {
   if (!req.body["g-recaptcha-response"] || req.body["g-recaptcha-response"] == undefined)
@@ -127,6 +137,7 @@ module.exports.postNewListing = function(req, res, next)
                 const title = req.body.title.replace(/[&\/\\,+(#)$~%.'":*?<>{}] /g, '');
                 if (title.length < 40)
                 {
+                    //IF THESE CATGORIES ARE APPLICABLE SERVICES CANNOT SOLICT PRICE VALUES
                   const avoidPriceCheck 
                   =
                   [
