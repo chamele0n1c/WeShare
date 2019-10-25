@@ -27,7 +27,7 @@ function getVerificationLink(usrObj)
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-           user:"0bl1v10n.devops@gmail.com",
+           user:"",
            pass:""
        }
    });
