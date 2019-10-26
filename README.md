@@ -1,8 +1,9 @@
 # (WeShare?)
 
 New Project in Design : // (WeShare / (SCRAPED NAME) )
-New DEMO VIDEO
-https://www.screencast.com/t/lvUEZ00FcS5w
+
+#New DEMO VIDEO
+[CLICK ME](https://www.screencast.com/t/lvUEZ00FcS5w)
 
 
 # Concept: A New Better Version of Craigslist made Grounds up 
