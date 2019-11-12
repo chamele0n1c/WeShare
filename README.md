@@ -14,8 +14,7 @@ demo of client view of systems in browser
 Node Front End Delivery and Backend Workings
 
 # RETHINKDB
-![alt text](https://raw.githubusercontent.com/indiedotkim/devstrap/master/logos/RethinkDB-logo-thinker.png)
-https://rethinkdb.com/
+[![rethinkdb][https://raw.githubusercontent.com/indiedotkim/devstrap/master/logos/RethinkDB-logo-thinker.png]][https://rethinkdb.com/]
 THIS PROJECT Utilizies Open Sourced Technologies RETHINKDB 
 as a NoSQL Method of Storing User Data inside of the RETHINKDB
 Database hosted on either the local machine or closed lan configured server
@@ -26,7 +25,8 @@ Any IoT scaled Devices with much fidelity as required for an Even semi large amm
 of connected clients
 
 # Squirelly.jS Node.js Expres.js View/Render Engine
-![alt text](https://squirrelly.js.org/img/logo/fit.svg)https://squirrelly.js.org
+[![squirrelly.js][https://squirrelly.js.org/img/logo/fit.svg]][https://squirrelly.js.org]
+
 # Working ENVIRONMENT
 
 Windows10 Test ENV
