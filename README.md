@@ -26,9 +26,7 @@ Any IoT scaled Devices with much fidelity as required for an Even semi large amm
 of connected clients
 
 # Squirelly.jS Node.js Expres.js View/Render Engine
-https://squirrelly.js.org/img/logo/fit.svg
-![alt text](https://squirrelly.js.org/img/logo/fit.svg)
-https://squirrelly.js.org
+![alt text](https://squirrelly.js.org/img/logo/fit.svg)https://squirrelly.js.org
 # Working ENVIRONMENT
 
 Windows10 Test ENV
