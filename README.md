@@ -24,8 +24,10 @@ stacks cause it to use too much ram and processing power and will not Run on
 Any IoT scaled Devices with much fidelity as required for an Even semi large ammount
 of connected clients
 
-# Squirelly.jS Node.js Expres.js View/Render Engine
+# Squirelly.jS Node.js Express.js View/Render Engine
 https://squirrelly.js.org
+https://expressjs.com/
+https://nodejs.org/en/
 
 # Working ENVIRONMENT
 
